@@ -5,7 +5,7 @@ import { ArrowRight, MessageSquare, Heart, Calendar as CalendarIcon, ChefHat } f
 import { useAppData } from '@/app/state/AppData';
 
 export function Home() {
-  const { topics, threads, events, recipes } = useAppData();
+  const { topics, threads, events, recipes, users } = useAppData();
   const featuredTopics = topics.filter(t => t.featured);
   const recentThreads = threads.slice(0, 3);
   const upcomingEvents = events.slice(0, 2);
@@ -112,7 +112,9 @@ export function Home() {
             </div>
             
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                {recentThreads.map((thread) => (
+                {recentThreads.map((thread) => {
+                  const authorName = users.find(user => user.id === thread.authorId)?.name || 'Anonymous';
+                  return (
                     <Link key={thread.id} to={`/thread/${thread.id}`} className="block">
                         <div className="bg-white p-6 rounded-xl shadow-sm border border-neutral-200 hover:border-teal-300 transition-colors h-full flex flex-col">
                             <div className="flex items-start justify-between mb-4">
@@ -136,14 +138,15 @@ export function Home() {
                                 </div>
                                 <div className="flex items-center gap-2">
                                     <div className="w-5 h-5 rounded-full bg-neutral-200 flex items-center justify-center">
-                                        <span className="text-[10px] font-bold text-neutral-700">{initials(thread.author)}</span>
+                                        <span className="text-[10px] font-bold text-neutral-700">{initials(authorName)}</span>
                                     </div>
-                                    <span className="text-xs font-medium">{thread.author ?? 'Anonymous'}</span>
+                                    <span className="text-xs font-medium">{authorName}</span>
                                 </div>
                             </div>
                         </div>
                     </Link>
-                ))}
+                  );
+                })}
             </div>
          </div>
       </section>
