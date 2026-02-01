@@ -195,7 +195,7 @@ export function Home() {
                                 <div className="flex items-center gap-2 text-white/80 text-xs mt-1">
                                     <span>{recipe.difficulty ?? 'Medium'}</span>
                                     <span>•</span>
-                                    <span>{recipe.prepTime ?? '30 mins'}</span>
+                                    <span>{recipe.cookTime ?? '30 mins'}</span>
                                 </div>
                             </div>
                         </Link>
