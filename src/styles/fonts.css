@@ -1,0 +1,6 @@
+/* Placeholder font file.
+   If your design uses custom fonts, add @font-face rules here.
+*/
+:root {
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Liberation Sans", sans-serif;
+}
