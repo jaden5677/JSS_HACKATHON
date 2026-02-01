@@ -116,7 +116,7 @@ export const topics: Topic[] = [
     id: 't5',
     title: 'Tobago',
     description: 'Heritage Festival, villages, beaches, food, and community life in Tobago.',
-    image: img(TobagoImg),
+    image: TobagoImg,
     category: 'community',
     featured: true,
   },
