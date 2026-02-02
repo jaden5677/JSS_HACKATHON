@@ -6,6 +6,7 @@
 |Sanjay Ramoutar| Development Lead | 18687980895 |
 |Jaden Sooklal | Debugging, Video Editing, finishing touches| 18687779105|
 
+# For fastest path to website:
 # [Website](https://jss-hackathon.onrender.com/)
 --------------------------------------------------------------
 ## Run locally
@@ -15,6 +16,10 @@
 ```bash
 npm install
 npm run dev
+```
+## Run on Server
+```bash
+npx serve dist
 ```
 
 Open the URL printed in the terminal (usually http://localhost:5173).
