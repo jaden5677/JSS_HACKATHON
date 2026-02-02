@@ -6,8 +6,7 @@
 |Sanjay Ramoutar| Development Lead | 18687980895 |
 |Jaden Sooklal | Debugging, Video Editing, finishing touches| 18687779105|
 
-# For fastest path to website:
-# [Website](https://jss-hackathon.onrender.com/)
+# For fastest path to website: [Kiskadee](https://jss-hackathon.onrender.com/)
 --------------------------------------------------------------
 ## Run locally
 1) Install Node.js (LTS)
