@@ -7,6 +7,22 @@
 |Jaden Sooklal | Debugging, Video Editing, finishing touches| 18687779105|
 
 # [Website](https://jss-hackathon.onrender.com/)
+--------------------------------------------------------------
+## Run locally
+1) Install Node.js (LTS)
+2) In this project folder:
+
+```bash
+npm install
+npm run dev
+```
+
+Open the URL printed in the terminal (usually http://localhost:5173).
+
+## Notes
+- This prototype persists Categories + Posts in your browser via `localStorage`.
+- Replace the seed images (currently using picsum placeholders) with your own assets when ready.
+------------------------------------------------------------------
 ## **Kiskadee**
 
 This is a web app that is made to connect the people of Trinidad and Tobago with their culture and heritage. Offering both the ability to learn from community heads as well as post their own experience with the application.
